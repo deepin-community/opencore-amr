@@ -1,0 +1,69 @@
+Source: opencore-amr
+Section: libs
+Priority: optional
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Uploaders:
+ Martin Storsjö <martin@martin.st>
+Build-Depends:
+ debhelper-compat (= 12)
+Standards-Version: 4.4.1
+Vcs-Git: https://salsa.debian.org/multimedia-team/opencore-amr.git
+Vcs-Browser: https://salsa.debian.org/multimedia-team/opencore-amr
+Homepage: https://sourceforge.net/projects/opencore-amr/
+Rules-Requires-Root: no
+
+Package: libopencore-amrnb-dev
+Architecture: any
+Multi-Arch: same
+Section: libdevel
+Depends:
+ libopencore-amrnb0 (= ${binary:Version}),
+ ${misc:Depends}
+Description: Adaptive Multi Rate speech codec - development files
+ This library contains an implementation of the 3GPP TS 26.073 specification for
+ the Adaptive Multi Rate (AMR) speech codec. The implementation is derived from
+ the OpenCORE framework, part of the Google Android project.
+ .
+ This package contains the files necessary for development.
+
+Package: libopencore-amrnb0
+Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends}
+Description: Adaptive Multi Rate speech codec - shared library
+ This library contains an implementation of the 3GPP TS 26.073 specification for
+ the Adaptive Multi Rate (AMR) speech codec. The implementation is derived from
+ the OpenCORE framework, part of the Google Android project.
+ .
+ This package contains the encoder/decoder shared library.
+
+Package: libopencore-amrwb-dev
+Architecture: any
+Multi-Arch: same
+Section: libdevel
+Depends:
+ libopencore-amrwb0 (= ${binary:Version}),
+ ${misc:Depends}
+Description: Adaptive Multi-Rate - Wideband speech codec - development files
+ This library contains an implementation of the 3GPP TS 26.173 specification for
+ the Adaptive Multi-Rate - Wideband (AMR-WB) speech decoder. The implementation
+ is derived from the OpenCORE framework, part of the Google Android project.
+ .
+ This package contains the files necessary for development.
+
+Package: libopencore-amrwb0
+Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends}
+Description: Adaptive Multi-Rate - Wideband speech codec - shared library
+ This library contains an implementation of the 3GPP TS 26.173 specification for
+ the Adaptive Multi-Rate - Wideband (AMR-WB) speech decoder. The implementation
+ is derived from the OpenCORE framework, part of the Google Android project.
+ .
+ This package contains the decoder shared library.
