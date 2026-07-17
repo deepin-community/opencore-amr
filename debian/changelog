@@ -1,3 +1,22 @@
+opencore-amr (0.1.6-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Archive, Bug-Submit (from
+    ./configure), Name (from ./configure).
+
+  [ Dennis Braun ]
+  * New upstream version 0.1.6
+  * Bump dh-compat to 13
+  * Bump Standards Version to 4.6.1
+  * Do not install .la files
+  * d/rules: Add hardening
+  * d/upstream/metadata: Add Repository and Repository-Browse fields
+  * Add salsa ci config
+
+ -- Dennis Braun <d_braun@kabelmail.de>  Sun, 09 Oct 2022 17:07:56 +0200
+
 opencore-amr (0.1.5-1) unstable; urgency=medium
 
   * Team upload.

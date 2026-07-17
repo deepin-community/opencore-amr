@@ -5,8 +5,8 @@ Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
 Uploaders:
  Martin Storsjö <martin@martin.st>
 Build-Depends:
- debhelper-compat (= 12)
-Standards-Version: 4.4.1
+ debhelper-compat (= 13)
+Standards-Version: 4.6.1
 Vcs-Git: https://salsa.debian.org/multimedia-team/opencore-amr.git
 Vcs-Browser: https://salsa.debian.org/multimedia-team/opencore-amr
 Homepage: https://sourceforge.net/projects/opencore-amr/
